@@ -1,0 +1,17 @@
+version: 37
+jobs:
+  - name: HelloWorldJob
+    steps:
+      - !CommandStep
+        name: HelloWorldStep
+        runInContainer: true
+        image: alpine:latest
+        interpreter: !DefaultInterpreter
+          commands: |
+            echo "Hello, World! :3"
+        useTTY: true
+        condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+    retryCondition: never
+    maxRetries: 3
+    retryDelay: 30
+    timeout: 14400
