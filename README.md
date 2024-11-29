@@ -11,3 +11,4 @@ This repo has mirrors!
 And the mirrors are:
 
 - https://onedev.sovereign.zue.dev/zuedev/UnrealProject241124
+- https://github.com/zuedev/UnrealProject241124
